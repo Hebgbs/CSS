@@ -1,0 +1,52 @@
+/* === Vivaldi corner image script 1.0 by Hebgbs ===
+   Special thanks to LonM for assistance with specific interface elements
+*/
+
+/* --- Legal ---
+   Creative Commons CC0: No Rights Reserved
+   End-user has full rights for any alterations of this code, for personal use and / or commercial resale.
+   Vivaldi Technologies may, without request or permission purpose this code or any derivative as seen fit.
+/*
+
+/* --- Image and colour definitions; adjust these --- */
+/**/
+:root
+{
+	--cornerImg: url(https://i.imgur.com/X1cutlb.png);
+}
+
+/* --- Applicable code;  --- */
+/**/
+#main,
+#main > DIV.UrlBar.toolbar.toolbar-mainbar.toolbar-large,
+#main > DIV.UrlBar.toolbar.toolbar-mainbar.toolbar-large > DIV.toolbar.toolbar-droptarget.toolbar-mainbar.toolbar-large,
+#tabs-tabbar-container,
+#tabs-subcontainer,
+#tabs-container > DIV.resize > DIV > span:nth-child(2) > DIV > DIV[id*="tab-"][class="tab active uifocusstop"],
+#switch,
+#panels > DIV.panel-group > DIV > DIV.panel.panel-bookmarks > header,
+#panels > DIV.panel-group > DIV > DIV.panel.panel-bookmarks > section:nth-child(3) > DIV > DIV,
+#downloads > header,
+#downloads > section:nth-child(2) > DIV.vivaldi-tree,
+#history-panel > header,
+#history-panel > section > DIV,
+#notes-panel > section > DIV.vivaldi-tree > DIV,
+#notes-panel > header,
+#notes-panel > section > DIV.no-notes,
+#notes-panel > section > DIV.no-notes > DIV,
+#window-panel > header,
+#window-panel > section > DIV.vivaldi-tree > DIV
+{
+	background-image: var(--cornerImg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	backgrund-size: cover;
+}
+
+.tab.active 
+{ /* Thanks LonM! */
+	background-image: url(https://i.imgur.com/X1cutlb.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position-x: calc(var(--PositionX)*-1);
+}
