@@ -1,13 +1,15 @@
-* @name Collapsible UI: Default
-* @description Overlapping interface elements which can hide away to provide  more display space for what matters most. Affects sidebar and guildbar.
-* @author Hebgbs
-* @version 1.0-RC1
+/**
+  * @name Collapsible UI: Default
+  * @description Overlapping interface elements which can hide away to provide  more display space for what matters most. Affects sidebar and guildbar.
+  * @author Hebgbs
+  * @version 1.0-RC1
+*/
 
 /* Imports */
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Zarrange.css");
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_HSL-Overlap.css");
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Sidebar-Overlap.css");
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_ResizeCSS-Overlap.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_HSL-Overlap.css");
 
 /* Variables */
   :root {
