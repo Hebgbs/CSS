@@ -6,7 +6,7 @@
 #private-channels .content-3YMskv,
 .sidebar-2K8pFh .scroller-RmtA4e .content-3YMskv {
     direction: ltr;
-    left: -var(--peekSize) !important;
+    left: calc(-1 * var(--peekSize)) !important;
 }
 /* Reposition unread pills */
 #channels .unread-2lAfLh {
