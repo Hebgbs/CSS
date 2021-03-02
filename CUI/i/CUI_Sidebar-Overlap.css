@@ -1,0 +1,43 @@
+/* Force scrollbar on left */
+#private-channels,
+.sidebar-2K8pFh .scroller-RmtA4e {
+    direction: rtl;
+}
+#private-channels .content-3YMskv,
+.sidebar-2K8pFh .scroller-RmtA4e .content-3YMskv {
+    direction: ltr;
+    left: -var(--peekSize) !important;
+}
+/* Reposition unread pills */
+#channels .unread-2lAfLh {
+    left: calc(var(--sideSize) - var(--sidePillOffset)) !important;
+    border-radius: 4px 0 0 4px !important;
+}
+/* Reposition channel category elements */
+#channels .iconVisibility-fhcwiH {
+    padding: 0 0 0 24px !important;
+}
+#channels .iconVisibility-fhcwiH .arrow-gKvcEx.icon-2yIBmh {
+    left: var(--peekSize) !important;
+}
+/* Make sidebar independent */
+.sidebar-2K8pFh {
+    position: absolute !important;
+    transition: ease var(--revealSpd);
+    height: 100%;
+}
+/* Autohide */
+.sidebar-2K8pFh:not(:hover) {
+    left: calc(-1 * (var(--sideSize) - var(--peekSize))) !important;
+    transition-delay: var(--hideDly);
+}
+.sidebar-2K8pFh:hover {
+    left: 0 !important;
+}
+/* HSL autohide: line up header bottom sides */
+.sidebar-2K8pFh .header-2V-4Sw {
+    height: calc(48px + var(--peekSize)) !important;
+}
+.chat-3bRxxu {
+    left: var(--peekSize) !important;
+}

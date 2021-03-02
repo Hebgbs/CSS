@@ -1,0 +1,18 @@
+/* COLLAPSIBLE UI CORE
+   TITLE: Interface layer shift
+   INTENT: Adjust interface layers prior to editing so that they appear as they should when other style are used.
+*/
+
+.scroller-3BxosC,
+.bd-detached-editor .app-2rEoOp,
+#bd-customcss-detach-container {
+	z-index: 1 !important;
+}
+.container-1taM1r .header-2V-4Sw,
+.chat-3bRxxu .title-3qD0b- {
+  z-index: 2 !important;
+}
+.sidebar-2K8pFh,
+.guilds-1SWlCJ {
+  z-index: 3;
+}

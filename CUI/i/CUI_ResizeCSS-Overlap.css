@@ -1,0 +1,6 @@
+/* Undo defaults
+   - DEFAULT: Makes it as if the editor wasn't attached.
+   - Change var "mainShrink" in Custom CSS to change main width on-demand. */
+.bd-detached-editor .app-2rEoOp {
+	width: calc(100% - var(--mainShrink)) !important;
+}
