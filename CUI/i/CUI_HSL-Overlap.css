@@ -1,5 +1,5 @@
-/* Delete this import if you are using Gibbu's Horizontal Serverlist as its own theme */
-@import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css")
+/* Delete this import if you are using Gibbu's Horizontal Serverlist **as its own theme** */
+@import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
 
 /* Make guild bar independent and set above */
 .guilds-1SWlCJ {

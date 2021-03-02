@@ -16,10 +16,10 @@
     /* Global */
       --peekSize: 8px; /* Minimum hover size for guiild bar and sidebar. */
       --revealSpd: 0.2s; /* Reveal duration; smaller is faster. */
-      --hideDly: 0.5s /* Show duration; smaller is less. */
+      --hideDly: 0.5s; /* Show duration; smaller is less. */
     /* Sidebar preferences */
-      --sideSize: 240px; /* Size of class "sidebar-2K8pFh"; grab from theme.
-      --guildPillOffset: 4px; /* Changes position of guild pill; smaller moves left.
+      --sideSize: 240px; /* Size of class "sidebar-2K8pFh"; grab from theme. */
+      --guildPillOffset: 4px; /* Changes position of guild pill; smaller moves left. */
     /* Horizontal Serverlist additional preferences */
       --guildPillOffset: 12px; /* New message indicator. */
     /* You probably have no business touching this but left in for debug purposes anyway */
