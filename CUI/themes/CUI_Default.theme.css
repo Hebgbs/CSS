@@ -2,13 +2,17 @@
   * @name Collapsible UI: Default
   * @description Overlapping interface elements which can hide away to provide  more display space for what matters most. Affects sidebar and guildbar.
   * @author Hebgbs
-  * @version 1.0-RC1
+  * @version 1.0-RC3
 */
 
 /* Imports */
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Zarrange.css");
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Sidebar-Overlap.css");
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_ResizeCSS-Overlap.css");
+  /* Gibbu's Horizontal Serverlist */
+    /* Delete if using Horizontal Serverlist on its own */
+  @import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
+    /* Delete if autohide for guild bar isn't preferred */
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_HSL-Overlap.css");
 
 /* Variables */
@@ -20,6 +24,7 @@
     /* Sidebar preferences */
       --sideSize: 240px; /* Size of class "sidebar-2K8pFh"; grab from theme. */
       --sidePillOffset: 4px; /* Changes position of guild pill; smaller moves left. */
+      --sideListOffset: -8px /* Position of list items in current theme; smaller moves left. */
     /* Horizontal Serverlist additional preferences */
       --guildPillOffset: 12px; /* New message indicator. */
     /* You probably have no business touching this but left in for debug purposes anyway */
