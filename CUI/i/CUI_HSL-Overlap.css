@@ -1,12 +1,17 @@
-/* Delete this import if you are using Gibbu's Horizontal Serverlist **as its own theme** */
-@import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
+/**
+  * @name Collapsible UI: Autohide for Gibbu's HSL
+  * @description Additions for hidiing away Gibbu's Horizontal Serverlist.
+  * @author Hebgbs
+  * @version CUI.Dep
+*/
 
-/* Make guild bar independent and set above */
+/* Make guild bar independent, set above and reposition */
 .guilds-1SWlCJ {
 	position: absolute !important;
 	transition: ease var(--revealSpd);
-}
 
+
+}
 /* Reposition and reshape guildbar pills */
 #app-mount .tutorialContainer-1v44GL .pill-2uzAFe.wrapper-sa6paO,
 #app-mount .listItem-2P_4kh .pill-31IEus.wrapper-sa6paO,
@@ -16,16 +21,13 @@
 .item-2hkk8m {
 	border-radius: 4px 0 0 4px !important;
 }
-
-/* Reposition Discord main interface */
-#app-mount .layers-3iHuyZ.layers-3q14ss .base-3dtUhz {
-	top: 0 !important;
+/* Reposition and adjust interface elements */
+#app-mount .container-2lgZY8 .base-3dtUhz {
+  top: 0 !important;
 }
-
-.chat-3bRxxu {
-	top: var(--peekSize) !important;
+.container-1r6BKw {
+	margin-top: calc(var(--mainTopShift) * var(--peekSize));
 }
-
 /* Set guild bar position for hover and unfocus states */
 .guilds-1SWlCJ:not(:hover){
 	top: var(--peekSize) !important;
