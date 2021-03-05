@@ -31,6 +31,7 @@
 .sidebar-2K8pFh {
 	position: absolute !important;
 	transition: ease var(--revealSpd);
+	height: 100% !important;
 }
 /* Autohide */
 .sidebar-2K8pFh:not(:hover) {
