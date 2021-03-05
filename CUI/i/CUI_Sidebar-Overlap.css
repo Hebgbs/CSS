@@ -35,28 +35,23 @@
 }
 /* Autohide */
 .sidebar-2K8pFh:not(:hover) {
-	left: calc(-1 * (var(--sideSize) - var(--peekSize))) !important;
+	left: var(--sideRest) !important;
 	transition-delay: var(--hideDly);
 }
 .sidebar-2K8pFh:hover {
 	left: 0 !important;
 }
 /* Guild scroller shift */
+.sidebar-2K8pFh .searchBar-6Kv8R2,
+.sidebar-2K8pFh header {
+    height: calc(48px + var(--peekSize)) !important;
+}
 .guilds-1SWlCJ .scroller-2TZvBN {
-    margin-top: calc(var(--guildLeftShift) * var(--peekSize)) !important;
+  margin-top: calc(var(--guildLeftShift) * var(--peekSize)) !important;
 }
 /* Reposition main interface elements */
 .container-1D34oG,
 .container-3Mxszk,
 .applicationStore-1pNvnv > div {
 	margin-left: calc(var(--mainLeftShift) * var(--peekSize));
-}
-.sidebar-2K8pFh .searchBar-6Kv8R2,
-.sidebar-2K8pFh .container-1taM1r > header {
-	margin-top: calc(var(--mainTopShift) * var(--peekSize));
-}
-.sidebar-2K8pFh .searchBar-6Kv8R2 > button,
-.sidebar-2K8pFh .container-1taM1r > header H1,
-.sidebar-2K8pFh .container-1taM1r > header SVG{
-	margin-top: calc(var(--mainLeftShift) * (-1  * var(--peekSize)));
 }
