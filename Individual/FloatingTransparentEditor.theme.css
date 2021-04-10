@@ -1,0 +1,65 @@
+/**
+  * @name Floating editor transparency
+  * @description A style to make the Monaco editor in new betterDiscord see-through so as you code, you can observe result underneath or read text underneath the code window whenever necessary. Content behind window blurs when cursor is inside! Colour as you wish!
+  * @author Hebgbs
+  * @version 1.0
+*/
+
+/* Variables: Adjust here or (not recommended) in Custom CSS */
+:root {
+    /* Normal editor state (cursor off window) */
+	    --FETanimN: .8s; /* Speed of transition */
+		--FETblurN: blur(0); /* Effect & intensity */
+		--FETaTxtN: .25; /* Text opacity */
+		--FETaMapN: .5; /* Minimap opacity */
+	/* Hover editor state (cursor on window */
+	    --FETanimH: .1s;
+	    --FETblurH: blur(1.25px);
+		--FETaTxtH: 1;
+		--FETaMapH: 1;
+    --FETclr: rgba(0,0,0,.6); /* Editor colour */
+}
+/* Blur effect for code readibility under other text */
+    /* Animation */
+.floating-window-content:not(:hover) {
+    transition: backdrop-filter ease var(--FETanimN); }
+.floating-window-content:not(:hover) .lines-content,
+.floating-window-content:not(:hover) .margin,
+.floating-window-content .minimap:not(:hover) {
+	transition: opacity ease var(--FETanimN); }
+.floating-window-content:hover {
+    transition: backdrop-filter ease var(--FETanimH); }
+.floating-window-content:hover .lines-content,
+.floating-window-content:hover .margin,
+.floating-window-content .minimap:hover {
+	transition: opacity ease var(--FETanimH); }
+	/* Effect */
+.floating-window-content:not(:hover) {
+    backdrop-filter: var(--FETblurN); }
+.floating-window-content:not(:hover) .lines-content,
+.floating-window-content:not(:hover) .margin {
+    opacity: var(--FETaTxtN); }
+.floating-window-content .minimap:not(:hover) {
+	opacity: var(--FETaMapN); }
+.floating-window-content:hover {
+    backdrop-filter: var(--FETblurH); }
+.floating-window-content:hover .lines-content,
+.floating-window-content:hover .margin {
+    opacity: var(--FETaTxtH); }
+.floating-window-content .minimap:hover {
+	opacity: var(--FETaMapH); }
+/* Editor apprarance */
+	/* Colour */
+#bd-editor-controls,
+.floating-window-titlebar,
+.monaco-editor {
+    background-color: var(--FETclr) !important; }
+		/* Window bottom */
+#floating-windows-layer > DIV {
+	background-image: linear-gradient(0deg, var(--FETclr) 9px, transparent 9px); }
+	/* No colour */
+#floating-windows-layer > DIV,
+.floating-window-content .margin,
+.floating-window-content,
+.monaco-editor-background {
+    background-color: transparent !important; }
