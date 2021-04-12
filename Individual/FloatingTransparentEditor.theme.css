@@ -8,15 +8,16 @@
 /* Variables: Adjust here or (not recommended) in Custom CSS */
 :root {
     /* Normal editor state (cursor off window) */
-	    --FETanimN: .8s; /* Speed of transition */
+		--FETanimN: .8s; /* Speed of transition */
 		--FETblurN: blur(0); /* Effect & intensity */
 		--FETaTxtN: .25; /* Text opacity */
 		--FETaMapN: .5; /* Minimap opacity */
 	/* Hover editor state (cursor on window */
-	    --FETanimH: .1s;
-	    --FETblurH: blur(1.25px);
+		--FETanimH: .1s;
+		--FETblurH: blur(1.25px);
 		--FETaTxtH: 1;
 		--FETaMapH: 1;
+	/* Editor colour */
     --FETclr: rgba(0,0,0,.6); /* Editor colour */
 }
 /* Blur effect for code readibility under other text */
@@ -55,6 +56,7 @@
 .monaco-editor {
     background-color: var(--FETclr) !important; }
 		/* Window bottom */
+/* XXX: Hacky workaround for see-through minimap. Try to seek a more functional alternative. */
 #floating-windows-layer > DIV {
 	background-image: linear-gradient(0deg, var(--FETclr) 9px, transparent 9px); }
 	/* No colour */
