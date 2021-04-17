@@ -17,7 +17,8 @@
 :root {
 /* Colour selector available in BBD 1.x Monaco editor!
    (Hover over valid colour values!) */
-    --userOnline: rgb(67, 181, 129);
+	/* ⬇️ ClearVision's primary colour, works with any CV preset! */
+    --userOnline: var(--main-color);
     --userIdle: rgb(250, 168, 26);
     --userDND: rgb(240, 71, 71);
     --userStream: rgb(89, 54, 149);
