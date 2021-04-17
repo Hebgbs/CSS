@@ -5,8 +5,8 @@
   * @version 1.3
 */
 
-/* ⬇️ Colour test: Delete import if you do not want this feature. */
-@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/clrTest.css);
+/* ⬇️ Colour test / extra text: Delete import if you do not want this feature. */
+@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/extras.css);
 /* ⬇️ The avatar underglow effect. If you don't like it, delete this import. */
 @import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/avaGlow.css);
 /* ⬇️ Status colour. If using Discord's default colour selections, this can be removed. */
@@ -25,15 +25,3 @@
 	/* ⬇️ This is included as a generic colour where no status is available. */
 	--userActive: rgb(114, 137, 218);
 }
-
-/* Addons for when theme is enabled */
-#Avatar\ underglow-card .bd-description-wrap:before,
-#Avatar\ underglow-card .bd-description-wrap:after {
-    position: relative;
-    top: 0;
-    left: 0;
-    font-size: 14px; }
-
-#Avatar\ underglow-card .bd-description-wrap:after {
-	content: "Features of this can be enabled or disabled at-will! Edit this theme and remove any imports you do not wish to use, which will be provided in the theme file at the very top.";
-	color: var(--header-secondary); }

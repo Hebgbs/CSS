@@ -1,5 +1,0 @@
-#Avatar\ underglow-card .bd-description-wrap:before {
-    background: linear-gradient(90deg, var(--userOnline) 16%, var(--userIdle) 16%, var(--userIdle) 33%, var(--userDND) 33%, var(--userDND) 50%, var(--userStream) 50%, var(--userStream) 67%, var(--userOffline) 67%, var(--userOffline) 84%, var(--userActive) 84%, var(--userActive) 100%);
-    content: "Adjust these colours using Custom CSS by copying and modifying the root block!";
-    color: #000;
-    text-shadow: 0 0 5px #fff; }

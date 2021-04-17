@@ -1,0 +1,23 @@
+#Avatar\ underglow-card .bd-description-wrap {
+    background-image: linear-gradient(90deg,
+									  var(--userOnline) 16%,
+									  var(--userIdle) 16%, var(--userIdle) 33%,
+									  var(--userDND) 33%, var(--userDND) 50%,
+									  var(--userStream) 50%, var(--userStream) 67%,
+									  var(--userOffline) 67%, var(--userOffline) 84%,
+									  var(--userActive) 84%, var(--userActive) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    padding-top: 10px; !important; }
+#Avatar\ underglow-card .bd-description-wrap:before,
+#Avatar\ underglow-card .bd-description-wrap:after {
+    position: relative;
+    top: 0;
+    left: 0;
+	color: var(--header-secondary); }
+#Avatar\ underglow-card .bd-description-wrap:before {
+	content: "Colour tester above! Modify root block colours by editing theme or copying into Custom CSS!";
+    font-size: 10px; }
+#Avatar\ underglow-card .bd-description-wrap:after {
+	content: "Features of this theme can be enabled or disabled at-will! Edit this theme and remove / comment any imports you do not wish to use, which will be provided in the theme file at the very top.";
+    font-size: 14px; }
