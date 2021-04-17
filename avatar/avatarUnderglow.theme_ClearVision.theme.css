@@ -37,3 +37,4 @@
 
 #Avatar\ underglow-card .bd-description-wrap:after {
 	content: "Features of this can be enabled or disabled at-will! Edit this theme and remove any imports you do not wish to use, which will be provided in the theme file at the very top.";
+	color: var(--header-secondary); }
