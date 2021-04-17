@@ -1,0 +1,39 @@
+/**
+  * @name Avatar underglow
+  * @description Back-illuminated avatars for Discord using box shadow for effect. Also removes the mask for all avatars and permits changing of status colours to one's liking. Group not-friend / Invisible uses Discord blurple. Use Custom CSS for changing root block preferences.
+  * @author Hebgbs
+  * @version 1.2
+*/
+
+/* ⬇️ Colour test: Delete import if you do not want this feature. */
+@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/clrTest.css);
+/* ⬇️ The avatar underglow effect. If you don't like it, delete this import. */
+@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/avaGlow.css);
+/* ⬇️ Status colour. If using Discord's default colour selections, this can be removed. */
+@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/avaDots.css)
+/* ⬇️ Avatar voice indicator thing. If you don't care about it, this can be removed. */
+@import url(https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/avatar/i/micRing.css);
+
+:root {
+/* Colour selector available in BBD 1.x Monaco editor!
+   (Hover over valid colour values!) */
+	/* ⬇️ ClearVision's primary colour, works with any CV preset! */
+    --userOnline: var(--main-color);
+    --userIdle: rgb(250, 168, 26);
+    --userDND: rgb(240, 71, 71);
+    --userStream: rgb(89, 54, 149);
+	--userOffline: rgb(116, 127, 141);
+	/* ⬇️ This is included as a generic colour where no status is available. */
+	--userActive: rgb(114, 137, 218);
+}
+
+/* Addons for when theme is enabled */
+#Avatar\ underglow\ \(DEV\)-card .bd-description-wrap:before,
+#Avatar\ underglow\ \(DEV\)-card .bd-description-wrap:after {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 14px; }
+
+#Avatar\ underglow\ \(DEV\)-card .bd-description-wrap:after {
+	content: "Features of this can be enabled or disabled at-will! Edit this theme and remove any imports you do not wish to use, which will be provided in the theme file at the very top.";

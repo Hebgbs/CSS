@@ -1,0 +1,94 @@
+/* Preparation */
+    /* Alternative avatar rounding in the absence of a mask */
+.wrapper-3t9DeA > SVG > FOREIGNOBJECT,
+.avatarWrapper-3H_478:hover > SVG > FOREIGNOBJECT {
+    mask: none !important;
+    border-radius: 100%; }
+    /* Box shadow fix for friend list */
+		/* Resolve underglow cutoff */
+.avatar-3W3CeO.wrapper-3t9DeA {
+    position: absolute !important; }
+    	/* Reposition text */
+#ONLINE-tab .text-37NqbO {
+    margin-left: 44px; }
+/* Effect */
+	/* Online */
+        /* x80 */
+.avatarWrapperNormal-3wFMbf .wrapper-3t9DeA[aria-label*="Online"],
+.avatar-3EQepX.wrapper-3t9DeA[aria-label*="Online"] {
+    box-shadow: 0 0 20px var(--userOnline),
+                0 0 16px var(--userOnline),
+                0 0 12px var(--userOnline); }
+		/* x32 */
+.avatar-3uk_u9 .wrapper-3t9DeA[aria-label*="Online"],
+.headerAvatar-2MDZJn.wrapper-3t9DeA[aria-label*="Online"],
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Online"],
+.avatar-SmRMf2.wrapper-3t9DeA[aria-label*="Online"] {
+    box-shadow: 0 0 15px var(--userOnline),
+                0 0 10px var(--userOnline),
+                0 0 5px var(--userOnline); }
+		/* x24 */
+.autocompleteRowIcon-2VJmzt .wrapper-3t9DeA[aria-label*="Online"] {
+    box-shadow: 0 0 9px var(--userOnline),
+                0 0 5px var(--userOnline),
+                0 0 3px var(--userOnline); }
+	/* Idle */
+        /* x80 */
+.avatarWrapperNormal-3wFMbf .wrapper-3t9DeA[aria-label*="Idle"],
+.avatar-3EQepX.wrapper-3t9DeA[aria-label*="Idle"] {
+    box-shadow: 0 0 20px var(--userIdle),
+                0 0 16px var(--userIdle),
+                0 0 12px var(--userIdle); }
+		/* x32 */
+.avatar-3uk_u9 .wrapper-3t9DeA[aria-label*="Idle"],
+.headerAvatar-2MDZJn.wrapper-3t9DeA[aria-label*="Idle"],
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Idle"],
+.avatar-SmRMf2.wrapper-3t9DeA[aria-label*="Idle"] {
+    box-shadow: 0 0 15px var(--userIdle),
+                0 0 10px var(--userIdle),
+                0 0 5px var(--userIdle); }
+		/* x24 */
+.autocompleteRowIcon-2VJmzt .wrapper-3t9DeA[aria-label*="Idle"] {
+    box-shadow: 0 0 9px var(--userIdle),
+                0 0 5px var(--userIdle),
+                0 0 3px var(--userIdle); }
+	/* DND */
+        /* x80 */
+.avatarWrapperNormal-3wFMbf .wrapper-3t9DeA[aria-label*="DND"],
+.avatar-3EQepX.wrapper-3t9DeA[aria-label*="Do Not Disturb"] {
+    box-shadow: 0 0 20px var(--userDND),
+                0 0 16px var(--userDND),
+                0 0 12px var(--userDND); }
+		/* x32 */
+.avatar-3uk_u9 .wrapper-3t9DeA[aria-label*="Do Not Disturb"],
+.headerAvatar-2MDZJn.wrapper-3t9DeA[aria-label*="Do Not DIsturb"],
+.avatar-3W3CeO.wrapper-3t9DeA[aria-label*="Do Not Disturb"],
+.avatar-SmRMf2.wrapper-3t9DeA[aria-label*="Do Not Disturb"] {
+    box-shadow: 0 0 15px var(--userDND),
+                0 0 10px var(--userDND),
+                0 0 5px var(--userDND); }
+        /* x24 */
+.autocompleteRowIcon-2VJmzt .wrapper-3t9DeA[aria-label*="Do Not Disturb"] {
+    box-shadow: 0 0 9px var(--userDND),
+                0 0 5px var(--userDND),
+                0 0 3px var(--userDND); }
+    /* Streaming */
+        /* x80 */
+.avatarWrapperNormal-3wFMbf .wrapper-3t9DeA[aria-label*="Streaming"],
+.avatar-3EQepX.wrapper-3t9DeA[aria-label*="Streaming"] {
+    box-shadow: 0 0 20px var(--userStream),
+                0 0 16px var(--userStream),
+                0 0 12px var(--userStream); }
+        /* x32 */
+.avatar-3uk_u9 .wrapper-3t9DeA[aria-label*="Streaming"] {
+    box-shadow: 0 0 15px var(--userStream),
+                0 0 10px var(--userStream),
+                0 0 5px var(--userStream); }
+    /* Not friends / Self-invisible */
+		/* x32 */
+.member-3-YXUe:not(.offline-3nJYBR) .avatar-3uk_u9 .wrapper-3t9DeA:not([aria-label*="Online"]):not([aria-label*="Idle"]):not([aria-label*="Do Not Disturb"]):not([aria-label*="Streaming"]),
+.avatar-SmRMf2.wrapper-3t9DeA[aria-label*="Invisible"] {
+    box-shadow: 0 0 15px var(--userActive),
+                0 0 10px var(--userActive),
+                0 0 5px var(--userActive); }
+

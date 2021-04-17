@@ -1,0 +1,29 @@
+/* Status states */
+	/* Online */
+.item-1tOPte[id="status-picker-online"] .status-1AY8sU {
+	background-color: var(--userOnline) }
+DIV[aria-label*="Online"] > SVG > SVG > RECT,
+DIV[aria-label*="Online"] > SVG > RECT {
+    fill: var(--userOnline); }
+	/* Idle */
+.item-1tOPte[id="status-picker-idle"] .status-1AY8sU {
+	background-color: var(--userIdle) }
+DIV[aria-label*="Idle"] > SVG > SVG > RECT,
+DIV[aria-label*="Idle"] > SVG > RECT:not([fill="transparent"]) {
+    fill: var(--userIdle); }
+	/* DND */
+.item-1tOPte[id="status-picker-dnd"] .status-1AY8sU {
+	background-color: var(--userDND) }
+DIV[aria-label*="Do Not Disturb"] > SVG > SVG > RECT,
+DIV[aria-label*="Do Not Disturb"] > SVG > RECT:not([fill="transparent"]) {
+    fill: var(--userDND); }
+	/* Streaming */
+DIV[aria-label*="Streaming"] > SVG > SVG > RECT,
+DIV[aria-label*="Streaming"] > SVG > RECT:not([fill="transparent"]) {
+    fill: var(--userStream); }
+	/* Offline */
+.item-1tOPte[id="status-picker-invisible"] .status-1AY8sU {
+	background-color: var(--userOffline) }
+DIV[aria-label*="Offline"] > SVG > SVG > RECT,
+DIV[aria-label*="Offline"] > SVG > RECT:not([fill="transparent"]) {
+	fill: var(--userOffline) }
