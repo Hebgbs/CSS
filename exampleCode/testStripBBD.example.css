@@ -1,0 +1,43 @@
+/* EXAMPLE CODE. DO NOT USE WITHOUT MODIFICATION. */
+
+/* If you don't know how this works, BTFO. 
+   You have no business here without educating yourself.
+
+   Consult your oracle of choice for any syntax shown here.
+   Ideally you should these helpful this code comments.
+   Don't forget to credit me when submitting your work! */
+:root {
+    /* Replace these test colours with your own */
+    --varClr1: red;
+    --varClr2: yellow;
+    --varClr3: green;
+    --varClr4: blue;
+}
+
+/* Test strip add-on: Use variables, and your brain.
+   Colours provided only as development example,
+   modify the root block to include your own.
+
+   Use element inspector to find your addon ID;
+   Copy its selector and replace shown placeholder. */
+#Your\ addon\ ID\ Here-card .bd-description-wrap {
+    background-image: linear-gradient(90deg,
+            /* Double-up on colours used after first. */
+            var(--varClr1) 25%,
+            var(--varClr2) 25%, var(--varClr2) 50%,
+            var(--varClr3) 50%, var(--varClr3) 75%,
+            var(--varClr4) 75%, var(--varClr4) 100%);
+        /* Implement the test strip */
+    background-repeat: no-repeat;
+    background-size: 2px;
+        /* Add an extra two pixels to
+           accomodate the test strip */
+    padding-top: 10px !important;
+}
+/* Text below test strip */
+#Your\ addon\ ID\ Here-card .bd-description-wrap:before {
+    color: var(--header-secondary);
+    content: "Replace this with your comment.";
+    font-size: 10px;
+}
+
