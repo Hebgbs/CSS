@@ -9,20 +9,19 @@
 /*
 
 /* --- Image and colour definitions; adjust these --- */
-/**/
 :root
 {
 	--cornerImg: url(https://i.imgur.com/X1cutlb.png);
+	--cornerSize: auto;
 }
 
 /* --- Applicable code;  --- */
-/**/
+#webpage-stack > div.webpageview.active.internal.visible.pagefocusstop > div > div > div.internal-page > div > nav,
 #main,
 #main > DIV.UrlBar.toolbar.toolbar-mainbar.toolbar-large,
 #main > DIV.UrlBar.toolbar.toolbar-mainbar.toolbar-large > DIV.toolbar.toolbar-droptarget.toolbar-mainbar.toolbar-large,
 #tabs-tabbar-container,
 #tabs-subcontainer,
-#tabs-container > DIV.resize > DIV > span:nth-child(2) > DIV > DIV[id*="tab-"][class="tab active uifocusstop"],
 #switch,
 #panels > DIV.panel-group > DIV > DIV.panel.panel-bookmarks > header,
 #panels > DIV.panel-group > DIV > DIV.panel.panel-bookmarks > section:nth-child(3) > DIV > DIV,
@@ -40,7 +39,7 @@
 	background-image: var(--cornerImg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	backgrund-size: cover;
+	background-size: var(--cornerSize);
 }
 
 .tab.active 
