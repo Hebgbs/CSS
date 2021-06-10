@@ -13,6 +13,7 @@
 {
 	--cornerImg: url(https://i.imgur.com/X1cutlb.png);
 	--cornerSize: auto;
+	--PosX: 0; /* Higher = toward right */
 }
 
 /* --- Applicable code;  --- */
@@ -44,7 +45,7 @@
 
 .tab.active 
 { /* Thanks LonM! */
-	background-image: url(https://i.imgur.com/X1cutlb.png);
+	background-image: var(--cornerImg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position-x: calc(var(--PositionX)*-1);
