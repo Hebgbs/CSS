@@ -1,0 +1,59 @@
+/**
+ * @name Cullapsible User Interface Sidebar
+ * @author Hebgbs
+ * @version do.not.share
+ * @description Assumes Gibbu's HSL, left side
+*/
+
+/* Hidden sidebar */
+  /* Prep */
+    /* Switch scrollbar orientation */
+      /* 1 / 2: Direction swap */
+.sidebar-2K8pFh {
+    direction: rtl;
+}     /* 2 / 2: LTR restore */
+.sidebar-2K8pFh .header-2V-4Sw,
+.sidebar-2K8pFh .content-1x5b-n,
+.sidebar-2K8pFh .panels-j1Uci_,
+.sidebar-2K8pFh .list-2luk8a,
+.sidebar-2K8pFh A > .layout-2DM8Md,
+.sidebar-2K8pFh .privateChannelsHeaderContainer-3NB1K1,
+.sidebar-2K8pFh .containerDefault-3tr_sE {
+    direction: ltr;
+}   /* Spacing fixes */
+      /* Sidebar lists */
+.sidebar-2K8pFh .channel-2QD9_O,
+.sidebar-2K8pFh .content-1x5b-n {
+    margin-left: 1px !important;
+    margin-right: 7px;
+}     /* Guild channel cats */
+.sidebar-2K8pFh .privateChannelsHeaderContainer-3NB1K1 {
+    padding-left: 10px !Important;
+    padding-right: 16px !important;
+}     /* Guild voice lists */
+.sidebar-2K8pFh .list-2luk8a {
+    padding: 0 7px 0 29px !important;
+}     /* Guild unread pills */
+.sidebar-2K8pFh .unread-2lAfLh {
+    border-radius: 4px 0 0 4px !important;
+    right: 0 !important;
+}     /* Shift centre */
+.base-3dtUhz {
+    width: calc (100% - var(--CUI_peek)) !important;
+    padding-left: var(--CUI_peek) !important;
+}   /* Autohide sidebar */
+      /* General */
+.sidebar-2K8pFh {
+    position: absolute !Important;
+    top: 0px;
+    height: 100% !Important;
+}     /* Not hidden */
+.sidebar-2K8pFh:hover {
+    left: 0 !Important;
+}     /* Hidden */
+BODY:not(.bd-minimal) .sidebar-2K8pFh:not(:hover) {
+    left: calc(-240px + var(--CUI_peek));
+}
+BODY.bd-minimal .sidebar-2K8pFh:not(:hover) {
+    left: calc(-200px + var(--CUI_peek));
+}

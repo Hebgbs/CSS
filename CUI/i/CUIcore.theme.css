@@ -1,0 +1,29 @@
+/**
+ * @name Cullapsible User Interface Core
+ * @author Hebgbs
+ * @version do.not.share
+ * @description Common selector modifications for CUI themes. DEV NOTE: change Custom CSS root before using!
+*/
+
+/* Z-index for element layering */
+#app-mount .guilds-1SWlCJ {
+  z-index: 2;
+}
+.sidebar-2K8pFh {
+  z-index: 1;
+}
+.chat-3bRxxu .title-3qD0b-,
+.chat-3bRxxu .wrapper-2qzCYF,
+.container-1D34oG .container-1r6BKw {
+  z-index: 0;
+}
+
+/* Animation stuff */
+.sidebar-2K8pFh,
+#app-mount .guilds-1SWlCJ {
+  transition: var(--CUI_animFx) var(--CUI_animSpd);
+}
+.sidebar-2K8pFh:not(:hover),
+#app-mount .container-2lgZY8 .guilds-1SWlCJ:not(:hover) {
+  transition-delay: var(--CUI_animDly);
+}

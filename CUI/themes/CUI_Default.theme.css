@@ -1,37 +1,23 @@
 /**
-  * @name Collapsible UI: Default
-  * @description Overlapping interface elements which can hide away to provide  more display space for what matters most. Affects sidebar and guildbar. Pulls in files for Gibbu's Horizontsal Serverlist.
+  * @name Collapsible User Interface: Default theme
+  * @description Overlapping interface elements which can hide away to provide more display space for what matters most. Affects sidebar and guildbar. Pulls in files for Gibbu's Horizontsal Serverlist.
   * @author Hebgbs
-  * @version 1.1
+  * @version 1.2
 */
 
 /* Imports */
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Zarrange.css");
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_Sidebar-Overlap.css");
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_ResizeCSS-Overlap.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIcore.theme.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIsideLeft.theme.css");
 /* Gibbu's Horizontal Serverlist */
   /* Delete if using Horizontal Serverlist on its own */
     @import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
   /* Delete if autohide for guild bar isn't preferred */
-    @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUI_HSL-Overlap.css");
+    @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIguildTop.theme.css");
 
 /* Variables */
-  :root {
-    /* Global */
-      --peekSize: 8px; /* Minimum hover size for guiild bar and sidebar. Best with even numbers. */
-      --revealSpd: 0.2s; /* Reveal duration; smaller is faster. */
-      --hideDly: 0.5s; /* Show duration; smaller is less. */
-    /* Sidebar preferences */
-      --sideSize: 240px; /* Size of class "sidebar-2K8pFh"; grab from theme. */
-      --sidePillOffset: 4px; /* Changes position of guild pill; smaller moves left. */
-      --sideListOffset: -8px; /* Position of list items in current theme; smaller moves left. */
-    /* Horizontal Serverlist additional preferences */
-      --guildPillOffset: 12px; /* New message indicator. */
-    /* You probably have no business touching this but left in for debug purposes anyway. ddjust with your own root! */
-        --mainShrink: 0; /* Resizable CSS: Higher is smaller main UI. */
-        --sideRest: calc(-1 * (var(--sideSize) - var(--peekSize))); /* Sidebar: Modify sidebar inactive state */
-    /* Binary preferences based on maths: 1 = yes, 0 = no, (<0 | >1) = mistakes. */
-        --guildLeftShift: 1; /* 1 = Move HSL guildbar left as defined by --peekSize. */
-        --mainLeftShift: 1; /* 1 = Move chat and friends left as defined by --peekSize. */
-        --mainTopShift: 1; /* 1 = Move chat and friends down as defined by --peekSize. */
+:root {
+--CUI_animFx: cubic-bezier(.52,0,.74,0);
+--CUI_animSpd: 250ms; /* Effect speed: Lower is faster */
+--CUI_animDly: 0.5s; /* Hiding delay: Higher is longer */
+--CUI_peek: 5px; /* Exposure size: Higher shows more */
 }
