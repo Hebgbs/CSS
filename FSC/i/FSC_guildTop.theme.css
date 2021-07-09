@@ -1,7 +1,7 @@
 /**
  * @name Cullapsible User Interface guildbar
  * @author Hebgbs
- * @version CUI.dep
+ * @version FSC.dep
  * @description Requires Gibbu's HSL.
 */
 
@@ -10,14 +10,16 @@
 #app-mount .pill-3N7f9r.wrapper-sa6paO,
 #app-mount .pill-1Z5PKm.wrapper-sa6paO,
 #app-mount .pill-1z4sAY.wrapper-sa6paO {
-    top: calc(var(--server-container) - 32px) !Important;
+    top: initial !Important;
+    /* Magic math problemm to solve bottom placement */
+    bottom: calc(-1 * (var(--server-container) * 0.46));
 }
 #app-mount .wrapper-sa6paO .item-2hkk8m {
     border-radius: 4px 0 0 4px !Important;
 } /* Autohide guildbar */
     /* Undoing Gibbu's changes */
 #app-mount .app-1q1i1E .container-2lgZY8 .base-3dtUhz {
-    top: var(--CUI_peek) !important;
+    top: var(--FSC_peek) !important;
 }   /* Not hidden */
       /* XXX: Undoing my changes */
 #app-mount .container-2lgZY8 .guilds-1SWlCJ:hover {
@@ -25,4 +27,4 @@
 }   /* Hidden */
       /* XXX: MORE overriding */
 #app-mount .container-2lgZY8 .guilds-1SWlCJ:not(:hover) {
-    top: var(--CUI_peek) !important;
+    top: var(--FSC_peek) !important;

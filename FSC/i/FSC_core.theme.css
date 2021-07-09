@@ -1,7 +1,7 @@
 /**
- * @name Cullapsible User Interface Core
+ * @name FUllscreen Chat Core
  * @author Hebgbs
- * @version CUI.core
+ * @version FSC.core
  * @description Common selector modifications for CUI themes. DEV NOTE: change Custom CSS root before using!
 */
 
@@ -21,9 +21,9 @@
 /* Animation stuff */
 .sidebar-2K8pFh,
 #app-mount .guilds-1SWlCJ {
-  transition: var(--CUI_animFx) var(--CUI_animSpd);
+  transition: var(--FSC_animFx) var(--FSC_animSpd);
 }
 .sidebar-2K8pFh:not(:hover),
 #app-mount .container-2lgZY8 .guilds-1SWlCJ:not(:hover) {
-  transition-delay: var(--CUI_animDly);
+  transition-delay: var(--FSC_animDly);
 }

@@ -6,18 +6,18 @@
 */
 
 /* Imports */
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIcore.theme.css");
-  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIsideLeft.theme.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_core.theme.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_sideLeft.theme.css");
 /* Gibbu's Horizontal Serverlist */
   /* Delete if using Horizontal Serverlist on its own */
     @import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
   /* Delete if autohide for guild bar isn't preferred */
-    @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/CUI/i/CUIguildTop.theme.css");
+    @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_guildTop.theme.css");
 
 /* Variables */
 :root {
---CUI_animFx: cubic-bezier(.52,0,.74,0);
---CUI_animSpd: 250ms; /* Effect speed: Lower is faster */
---CUI_animDly: 0.5s; /* Hiding delay: Higher is longer */
---CUI_peek: 5px; /* Exposure size: Higher shows more */
+--FSC_animFx: cubic-bezier(.52,0,.74,0);
+--FSC_animSpd: 250ms; /* Effect speed: Lower is faster */
+--FSC_animDly: 0.5s; /* Hiding delay: Higher is longer */
+--FSC_peek: 5px; /* Exposure size: Higher shows more */
 }

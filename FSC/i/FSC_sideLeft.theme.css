@@ -1,8 +1,8 @@
 /**
  * @name Cullapsible User Interface Sidebar
  * @author Hebgbs
- * @version CUI.dep
- * @description Assumes Gibbu's HSL, left side
+ * @version FSC.dep
+ * @description left placement
 */
 
 /* Hidden sidebar */
@@ -39,8 +39,8 @@
     right: 0 !important;
 }     /* Shift centre */
 .base-3dtUhz {
-    width: calc (100% - var(--CUI_peek)) !important;
-    padding-left: var(--CUI_peek) !important;
+    width: calc (100% - var(--FSC_peek)) !important;
+    padding-left: var(--FSC_peek) !important;
 }   /* Autohide sidebar */
       /* General */
 .sidebar-2K8pFh {
@@ -52,8 +52,8 @@
     left: 0 !Important;
 }     /* Hidden */
 BODY:not(.bd-minimal) .sidebar-2K8pFh:not(:hover) {
-    left: calc(-240px + var(--CUI_peek));
+    left: calc(-240px + var(--FSC_peek));
 }
 BODY.bd-minimal .sidebar-2K8pFh:not(:hover) {
-    left: calc(-200px + var(--CUI_peek));
+    left: calc(-200px + var(--FSC_peek));
 }
