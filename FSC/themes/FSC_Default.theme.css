@@ -8,13 +8,11 @@
 /* Imports */
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_core.theme.css");
   @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_sideLeft.theme.css");
-/* Gibbu's Horizontal Serverlist */
-  /* Delete if using Horizontal Serverlist on its own */
-    @import url("https://cdn.jsdelivr.net/gh/DiscordStyles/HorizontalServerList@master/HorizontalServerList.theme.css");
-  /* Delete if autohide for guild bar isn't preferred */
-    @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_guildTop.theme.css");
+  @import url("https://cdn.jsdelivr.net/gh/Hebgbs/CSS@BetterDiscord/FSC/i/FSC_guildTop.theme.css");
 
-/* Variables */
+/* Variables
+   Don't like them? Roll your own root block in BetterDiscord's
+   Custom CSS editor with these variables defined there. */
 :root {
 --FSC_animFx: cubic-bezier(.52,0,.74,0);
 --FSC_animSpd: 250ms; /* Effect speed: Lower is faster */
