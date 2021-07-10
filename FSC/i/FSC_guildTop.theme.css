@@ -7,9 +7,9 @@
 
 /* Hidden guildbar */
   /* Pill orientation and style */
-#app-mount .pill-3N7f9r.wrapper-sa6paO,
-#app-mount .pill-1Z5PKm.wrapper-sa6paO,
-#app-mount .pill-1z4sAY.wrapper-sa6paO {
+#app-mount .listItem-GuPuDH .pill-3N7f9r.wrapper-sa6paO,
+#app-mount .listItem-GuPuDH .pill-1Z5PKm.wrapper-sa6paO,
+#app-mount .listItem-GuPuDH .pill-1z4sAY.wrapper-sa6paO {
     top: initial !Important;
     /* Magic math problemm to solve bottom placement */
     bottom: calc(-1 * (var(--server-container) * 0.46));
@@ -28,3 +28,4 @@
       /* XXX: MORE overriding */
 #app-mount .container-2lgZY8 .guilds-1SWlCJ:not(:hover) {
     top: var(--FSC_peek) !important;
+}
